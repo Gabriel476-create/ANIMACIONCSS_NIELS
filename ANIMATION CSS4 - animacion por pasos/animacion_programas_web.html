@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <title>VISITA PERU</title>
+        <style>
+            *{
+                background-color: black;
+                margin:0px;
+                padding:0px;
+            }
+            .contenedor{
+                width:1000px;
+                height: 300px;
+                position: relative;
+                margin: 0 auto;
+                border: 3px solid white;
+                overflow: hidden;
+            }
+            .marco1{
+                width: 200px;
+                height: 300px;
+                background-color: red;
+                position: absolute;
+                top: 0px;
+                left: -200px;
+
+                animation: marco1 2s forwards;
+                background-image: url(img/im1.jpg);
+                background-size: cover;
+
+            }
+            @keyframes marco1{
+                0%{
+                    top: 0px;
+                    left: -200px;
+                    transform: rotatey(180deg)
+                }
+                50%{
+                    top: 0px;
+                    left: 200px;
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                }
+
+            }
+            .marco2{
+                width: 200px;
+                height: 300px;
+                background-color: green;
+                position: absolute;
+                top: -300px;
+                left: 200px;
+
+                animation: marco2 2s 1 forwards 2s;
+                background-image: url(img/img2\ \(2\).jpg);
+                background-size: cover;
+                
+            }
+            @keyframes marco2{
+                0%{
+                    top: -300px;
+                    left: 200px;
+                    transform: rotatey(180deg)
+                }
+                50%{
+                    top: 300px;
+                    left: 200px;
+                }
+                100%{
+                    top: 0px;
+                    left: 200px;
+                }
+
+            }
+            .marco3{
+                width: 200px;
+                height: 300px;
+                background-color: yellow;
+                position: absolute;
+                top: -300px;
+                left: 400px;
+
+                animation: marco3 2s 1 forwards 4s;
+                background-image: url(img/img3\ \(2\).jpg);
+                background-size: cover;
+                
+            }
+            @keyframes marco3{
+                0%{
+                    top: 0px;
+                    left: 0px;
+                    transform: rotatey(180deg)
+                }
+                50%{
+                    top: 300px;
+                    left: 400px;
+                }
+                100%{
+                    top: 0px;
+                    left: 400px;
+                }
+
+            }
+            .marco4{
+                width: 200px;
+                height: 300px;
+                background-color: blue;
+                position: absolute;
+                top: 0px;
+                left: 1200px;
+
+                animation: marco4 2s 1 forwards 6s;
+                background-image: url(img/img4.jpg);
+                background-size: cover;
+            }
+            @keyframes marco4{
+                0%{
+                    top: 0px;
+                    left: 1200px;
+                    transform: rotatey(180deg)
+                }
+                50%{
+                    top: 0px;
+                    left: 400px;
+                }
+                100%{
+                    top: 0px;
+                    left: 600px;
+                }
+
+            }
+            .marco5{
+                width: 200px;
+                height: 300px;
+                background-color: blue;
+                position: absolute;
+                top: 600px;
+                left: 800px;
+
+                animation: marco5 2s 1 forwards 8s;
+                background-image: url(img/img5.png);
+                background-size: cover;
+            }
+            @keyframes marco5{
+                0%{
+                    top: 600px;
+                    left: 800px;
+                    transform: rotatey(180deg)
+                }
+                50%{
+                    top: 300px;
+                    left: 800px;
+                }
+                100%{
+                    top: 0px;
+                    left: 800px;
+                }
+
+            }
+            .texto {
+                text-align: center;
+                position: absolute;
+                top: 300px;
+                left: 0px;
+                width: 100%;
+                font-size: 24px;
+                font-family: 'monserrat', sans-serif;
+                background-color: rgba(240, 248, 255, 0.5);
+                color: rgb(0, 0, 0);
+                z-index: 3;
+                opacity: 0;
+
+                animation: texto 2s 10s 1 forwards; 
+            }
+            @keyframes texto {
+                0% {
+                    top: 300px;
+                    left: 0px;
+                    opacity: 0;
+                }
+                50% {
+                    top: 150px;
+                    left: 0px;
+                    opacity: 0.5;
+                }
+                100% {
+                    top: 120px;
+                    left: 0px;
+                    opacity: 1;
+                }
+            }
+
+</style>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="marco1"></div>
+        <div class="marco2"></div>
+        <div class="marco3"></div>
+        <div class="marco4"></div>
+        <div class="marco5"></div>
+
+        <div class="texto">
+            Tecnologías de Desarrollo Web
+        </div>
+
+    </div>
+
+</body>
+</html>
