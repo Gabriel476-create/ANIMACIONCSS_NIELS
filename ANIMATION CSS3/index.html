@@ -1,16 +1,49 @@
 <html>
 <head>
-    <Title>ANIMACION 3 CSS</Title>
+    <title>ANIMACION CSS3</title>
     <style>
-        body{
+        body {
             background-color: rgb(248, 185, 48);
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        @keyframes brillo {
+            0%, 100% { color: white; }
+            50%       { color: yellow; text-shadow: 0 0 15px white, 0 0 30px yellow; }
+        }
+
+        h1 {
+            text-align: center;
+            animation: brillo 1.5s infinite;
+            color: white;
+        }
+
+        a {
+            display: block;
+            width: 220px;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 2px solid white;
+            border-radius: 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.7);
         }
     </style>
 </head>
-    <h1>ANIMACION CSS 3 - MOVIMIENTO</h1>
-    <a href="animacion1.html">movimiento horizontal</a><br>
-    <a href="animacion2.html">movimiento vertical</a><br>
-    <a href="animacion3.html">movimiento diagonal</a><br>
-    <a href="animacion4.html">movimiento, diseño propio</a><br><br><br>
-    <a href="../index.html">VOLVER PAPU!!!!</a>
+<body>
+    <h1>Animacion CSS 3 - Movimiento</h1>
+
+    <a href="animacion1.html">Movimiento horizontal</a>
+    <a href="animacion2.html">Movimiento vertical</a>
+    <a href="animacion3.html">Movimiento diagonal</a>
+    <a href="animacion4.html">Movimiento diseño propio</a>
+    <a href="../index.html">Volver</a>
+</body>
 </html>
