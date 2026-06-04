@@ -1,15 +1,48 @@
 <html>
 <head>
-    <title>ANIMACION CSS2</title>
+    <title>CSS1</title>
     <style>
-        body{
-            background-color: rgb(248, 185, 48);
+        body {
+            background-image: url('img/fondo.webp');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        @keyframes brillo {
+            0%, 100% { color: white; }
+            50%       { color: yellow; text-shadow: 0 0 15px white, 0 0 30px yellow; }
+        }
+
+        h1 {
+            text-align: center;
+            animation: brillo 1.5s infinite;
+            color: white;
+        }
+
+        a {
+            display: block;
+            width: 220px;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.45);
+            border: 2px solid white;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.65);
         }
     </style>
 </head>
 <body>
-    <h1>ANIMACION CSS 2 - EFECTOS</h1>
-    <a href="animacion1.html">PAGINA</a><br><br><br>
-    <a href="../index.html">VOLVER PAPU!!!!</a>
+    <h1>Animacion CSS 1 - Formas</h1>
+
+    <a href="ejemplodepagina.html">Ejemplo de pagina</a>
+    <a href="tablerodeajedrez.html">Tablero de ajedrez</a>
+    <a href="../index.html">Volver</a>
 </body>
 </html>
