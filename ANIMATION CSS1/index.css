@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(248, 185, 48);
+    background-image: url('img/fondo.webp');
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+@keyframes brillo {
+    0%, 100% {
+        color: black;
+    }
+    50% {
+        color: yellow;
+        text-shadow: 0 0 10px black;
+    }
+}
+
+h1 {
+    text-align: center;
+    animation: brillo 1.5s infinite;
+}
+
+a {
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+a:hover {
+    background-color: darkblue;
+}
