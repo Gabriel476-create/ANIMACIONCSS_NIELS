@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+
+#cuadrito1,
+#cuadrito2{
+    height:100px;
+    width:100px;
+    display:inline-block;
+}
+
+#cuadrito1{
+    background-color:white;
+}
+
+#cuadrito2{
+    background-color:black;
+}
+
+#contenedor1{
+    height:100px;
+    width:1000;
+}
+
+a{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 30px auto;
+
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
