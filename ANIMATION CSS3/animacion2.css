@@ -20,29 +20,29 @@ body{
 }
 
 .cuadrito{
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 200px;
     position: absolute;
     top: 50px;
-    left: 180px;
-
+    left: 0px;
     animation: cuadrito 6s infinite linear;
 }
-
 @keyframes cuadrito{
     from{
-        top: -100px;
+        top: -200px;
     }
-
     to{
         top: 200px;
     }
 }
 
 .cuadrito img{
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
 }
+
 
 a{
     position: fixed;
