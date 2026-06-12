@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: rgb(248,185,48);
+    padding-top:50px;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor{
+    width:800px;
+    height:300px;
+    border:1px solid black;
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.cuadrito{
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:0px;
+    left:0px;
+
+    animation: cuadrito 4s infinite;
+}
+
+@keyframes cuadrito{
+    0%{
+        top:100px;
+        left:-100px;
+        rotate:45deg;
+    }
+
+    33%{
+        top:0px;
+        left:350px;
+        rotate:45deg;
+    }
+
+    66%{
+        top:200px;
+        left:350px;
+        rotate:45deg;
+    }
+
+    100%{
+        top:100px;
+        left:800px;
+        rotate:45deg;
+    }
+}
+
+.abeja{
+    width:100px;
+    position:absolute;
+    rotate:45deg;
+    z-index:1;
+}
+
+.cuadrito2{
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:0px;
+    left:0px;
+
+    animation: cuadrito 5s infinite 2s;
+}
+
+@keyframes cuadrito2{
+    0%{
+        top:100px;
+        left:-100px;
+        rotate:45deg;
+    }
+
+    33%{
+        top:0px;
+        left:350px;
+        rotate:45deg;
+    }
+
+    66%{
+        top:200px;
+        left:350px;
+        rotate:45deg;
+    }
+
+    100%{
+        top:100px;
+        left:800px;
+        rotate:45deg;
+    }
+}
+
+.abeja1{
+    width:100px;
+    position:absolute;
+    rotate:45deg;
+    z-index:1;
+}
+
+.pradera{
+    position:absolute;
+    top:-450px;
+    left:0px;
+    width:100%;
+    z-index:-2;
+}
+
+.cielo{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-3;
+}
+
+.volver{
+    position:fixed;
+    top:40px;
+    right:60px;
+
+    padding:10px 20px;
+    background-color:blue;
+    border:2px solid blue;
+    border-radius:20px;
+
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+}
+
+.volver:hover{
+    background-color:darkblue;
+}
