@@ -1,0 +1,76 @@
+h1{
+    font-family: "monserrat";
+    color:rgba(165, 42, 42, 0);
+    text-align: center;
+
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titulo{
+    from{color: rgba(226, 17, 17, 0);}
+    to{color: rgb(177, 50, 50);}
+}
+
+h2{
+    text-align: center;
+    font-family: "monserrat";
+    color: rgb(61, 60, 60);
+
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+p{
+    text-align: center;
+    font-family: "century gothic";
+    font-weight: bold;
+
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes texto{
+    from{color:rgba(0,0,0,0);}
+    to{color:rgba(0,0,0,1);}
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    opacity: 0;
+
+    animation: imagen 3s 6s forwards;
+}
+
+@keyframes imagen{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+a{
+    position: fixed;
+    top: 40px;
+    right: 70px;
+
+    padding: 10px 20px;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+a:hover{
+    background-color: darkblue;
+}
